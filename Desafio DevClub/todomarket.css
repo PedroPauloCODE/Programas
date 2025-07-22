@@ -1,0 +1,46 @@
+body {
+    background-color: #2e2c2c;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #f0f0f0;
+
+}
+
+#todo {
+    margin-left: 30%;
+}
+
+#market {
+    padding-left: 50%;
+}
+
+#item {
+   width: 124px;
+   margin-left: 20px;
+}
+#obs {
+    width: 200px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#qt {
+    width: 20px;
+    text-align: center;
+}
+
+#menulist {
+    gap: 50px;
+    display: flex;
+    margin: 50px auto 20px;
+    justify-content: center;
+}
+
+#list {
+   border: 3px solid;
+   border-color: #f0f0f0;
+}
