@@ -52,29 +52,9 @@ function updateList() {
             checkbox.type = 'checkbox';
             checkbox.id = `checkbox${index}`;
                         
-             remove.addEventListener("click", function() {
-                
-                const checkboxes = document.querySelectorAll('#list input[type="checkbox"]');
-                checkboxes.forEach((checkbox, index) => {
-                     if (checkbox.checked) {
-                                
-                    getOut(index);
-                   
-                }
-                    });
-            })
+             
 
-            done.addEventListener("click", function() {
-                
-                const checkboxes = document.querySelectorAll('#list input[type="checkbox"]');
-                checkboxes.forEach((checkbox, index) => {
-                     if (checkbox.checked) {
-                                
-                    getOut(index);
-                   
-                }
-                    });
-            })
+            
 
 
             row.innerHTML = `
@@ -91,7 +71,31 @@ function updateList() {
 
 
 }
-    
+
+    remove.addEventListener("click", cleaner);
+    done.addEventListener("click", cleaner);
+       
+        
+            
+
+ 
+
+
+
+function cleaner() {
+                
+    const checkboxes = document.querySelectorAll('#list input[type="checkbox"]');
+                
+    for (let index = checkboxes.length - 1; index >= 0; index--) {
+        if (checkboxes[index].checked) {
+                        
+            getOut(index);
+                        
+        }
+    };
+             
+};
+
 function getOut(index) {
 
     items.splice(index, 1);

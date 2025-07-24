@@ -1,32 +1,63 @@
 body {
-    background-color: #2e2c2c;
+    background-image: url("./bloconotas.png"); 
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: 100% 100%;
+    overflow: auto;
+    
 }
 
 h1 {
-    color: #f0f0f0;
+    color: #000000;
+    font-family: "Patrick Hand", cursive;
 
 }
 
 #todo {
+    
     margin-left: 30%;
+    margin-top: 50%;
 }
 
 #market {
+    
     padding-left: 50%;
 }
 
 #item {
    width: 124px;
-   margin-left: 20px;
+   margin-left: 9%;
 }
 #obs {
     width: 200px;
     display: flex;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 9%;
+}
+main {
+display:flex;
+width: 80%;
+}
+#itembox {
+    margin-left: 10%;
+}
+
+#addbox{
+    width: 300px;   
+    height: 50px;
+    
+    
+    
+    
+}
+#add {
+    width: 50px;   
+    height: 50px;
+    margin-left: 50%;
+    margin-right: auto;
+    
 }
 #qt {
     width: 20px;
@@ -36,7 +67,7 @@ h1 {
 #menulist {
     gap: 50px;
     display: flex;
-    margin: 50px auto 20px;
+    margin: 30px auto 20px;
     justify-content: center;
 }
 
@@ -44,19 +75,21 @@ h1 {
     color: #f0f0f0;
    display: flex;
    flex-direction: column;
-   width: 95%;
+   width: 85%;
+   margin-left: 4%;
    font-size: 18px;
+   margin-bottom: 190px;
+   font-family: "Patrick Hand", cursive;
    
 }
 td {
     padding: 2px;
-    border: 1px solid #f0f0f0;
+    border-bottom: 1px solid #000000;
+    border-right: 2px solid #000000;
     
-    
-     
-
 }
 tr{
+    color: #000000;
     margin-left: 20px;
     margin-bottom: 10px;
 }
@@ -74,11 +107,12 @@ input{
 #box3 {
     width: 125px;
     padding-left: 5px;
+    border-right: none;
 }
 #lista {
     color: #f0f0f0;
     font-size: 20px;
-    padding-left: 20px;;
+    padding-left: 4%;
     }
 
     .linha {
