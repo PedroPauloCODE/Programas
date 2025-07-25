@@ -17,15 +17,29 @@ header {
     background-repeat: no-repeat;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 22px;
 }
 h1 {
     color: #000000;
     font-family: "Patrick Hand", cursive;
     margin-bottom: 0;
     margin-top: 0;
-    
+    margin-top: 140px;
 
 }
+
+#todo {
+    margin-left: 20%;
+    
+}
+
+#market {
+    transform: rotate(-25deg); 
+    margin-bottom: 0;
+    text-align: right;
+    }
+
 #cabecalho {
     display: flex;
     padding: 0;
@@ -40,10 +54,8 @@ h1 {
 }
 h2 {
     font-family: "Patrick Hand", cursive;
-   
     
-   
-   
+         
 }
 
 main {
@@ -82,6 +94,7 @@ main {
    height: 20px;
    margin-left: 9%;
    font-size: 15px;
+   
 }
 #obs {
     font-size: 15px;
@@ -102,17 +115,7 @@ main {
 }
 
 
-#todo {
-    flex-direction: row;
-    margin-left: 20%;
-    margin-top: 140px;
-}
 
-#market {
-    transform: rotate(-25deg); 
-    padding-left: 55%;
-    margin-bottom: 0;
-}
 
 
 
