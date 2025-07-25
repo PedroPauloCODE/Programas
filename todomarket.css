@@ -1,85 +1,155 @@
 body {
-    background-image: url("./bloconotas.png"); 
-    background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    background-size: 100% 100%;
-    overflow: auto;
+    max-width: 420px;   
+    
     
 }
 
+header {
+    width: 100%;
+    background-image: url("./blocoheaders.png"); 
+    height: 225px;
+    background-size: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
 h1 {
     color: #000000;
     font-family: "Patrick Hand", cursive;
-
-}
-
-#todo {
+    margin-bottom: 0;
+    margin-top: 0;
     
-    margin-left: 30%;
-    margin-top: 50%;
-}
 
-#market {
+}
+#cabecalho {
+    display: flex;
+    padding: 0;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    justify-content: center;
+    height: 50px;
     
-    padding-left: 50%;
+    
+}
+h2 {
+    font-family: "Patrick Hand", cursive;
+   
+    
+   
+   
 }
 
+main {
+    margin: 0;
+    padding: 0;
+    background-image: url("./blocomid.png"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+   
+}
+#painel{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    }
+#itembox {
+    width: 70%;
+    margin-left: 15px;
+}
+
+#addbox{
+   width: 30%;
+}
+#add {
+    width: 50px;   
+    height: 47px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 247, 187);
+    
+}
 #item {
-   width: 124px;
+   width: 146px;
+   height: 20px;
    margin-left: 9%;
+   font-size: 15px;
 }
 #obs {
+    font-size: 15px;
+    height: 20px;
     width: 200px;
     display: flex;
     margin-top: 5px;
     margin-left: 9%;
 }
-main {
-display:flex;
-width: 80%;
-}
-#itembox {
-    margin-left: 10%;
-}
 
-#addbox{
-    width: 300px;   
-    height: 50px;
-    
-    
-    
-    
-}
-#add {
-    width: 50px;   
-    height: 50px;
-    margin-left: 50%;
-    margin-right: auto;
-    
-}
+
 #qt {
-    width: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+    height: 20px;
+    width: 30px;
     text-align: center;
 }
+
+
+#todo {
+    flex-direction: row;
+    margin-left: 20%;
+    margin-top: 140px;
+}
+
+#market {
+    transform: rotate(-25deg); 
+    padding-left: 55%;
+    margin-bottom: 0;
+}
+
+
 
 #menulist {
     gap: 50px;
     display: flex;
-    margin: 30px auto 20px;
+    margin: 30px auto 5px;
     justify-content: center;
 }
-
+#clear{
+    font-family: "Patrick Hand", cursive;
+    background-color: rgb(247, 247, 187);
+    font-size: 18px;
+    text-align: center;
+}
+#remove{
+    font-family: "Patrick Hand", cursive;
+    background-color: rgb(247, 247, 187);
+    text-align: center;
+    font-size: 18px;
+}
+#done{
+    font-family: "Patrick Hand", cursive;
+    background-color: rgb(247, 247, 187);
+    text-align: center;
+    font-size: 18px;
+}
 #list {
     color: #f0f0f0;
    display: flex;
    flex-direction: column;
    width: 85%;
    margin-left: 4%;
-   font-size: 18px;
-   margin-bottom: 190px;
+   font-size: 20px;
    font-family: "Patrick Hand", cursive;
+   padding-bottom: 1%;
+   min-height: 500px;
    
 }
 td {
@@ -93,9 +163,7 @@ tr{
     margin-left: 20px;
     margin-bottom: 10px;
 }
-input{
 
-}
 #box1 {
     width: 125px;
     text-align: center;
@@ -103,6 +171,7 @@ input{
 #box2 {
     width: 30px;
     text-align: center;
+    
 }
 #box3 {
     width: 125px;
@@ -130,4 +199,14 @@ input{
         }
 .checkbox {
             cursor: pointer;
+           
 }
+
+footer {
+    background-image: url("./blocofooter.png");
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+

@@ -74,9 +74,13 @@ function updateList() {
 
     remove.addEventListener("click", cleaner);
     done.addEventListener("click", cleaner);
+    clear.addEventListener("click", clearAll);
        
-        
-            
+    function clearAll() {  
+        items = []; 
+        updateList();
+    };
+         
 
  
 

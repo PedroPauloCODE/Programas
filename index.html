@@ -5,39 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./todomarket.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>To do Market</title>
 </head>
+
+      
+
 <body>
-    <h1 id="todo">To do <del>List!</del></h1>
-    <h1 id="market">Market!</h1>
+     <header>
+        <h1 id="todo">To do <span style="margin-left: 5px;"></span><del>List!</del></h1>
+        <h1 id="market">Market!</h1>
+    </header> 
 
     <main>
-        <div id="itembox">
-            <input type="text" id="item" placeholder="Add an item">
-            <input type="number" id="qt" placeholder="QT">
-            <input type="text" id="obs" placeholder="observations">
+        <div id="painel">
+            <div id="itembox">
+                <input type="text" id="item" placeholder="Add an item">
+                <input type="number" id="qt" placeholder="QT">
+                <input type="text" id="obs" placeholder="observations">
+            </div>
+
+             <div id="addbox">
+                <button id="add"><b>Add</b></button>
+            </div>
+   
         </div>
 
-        <div id="addbox"><button id="add">Add</button></div>
-   
+        <div id="menulist">
+            <button id="clear">Clear All</button>
+            <button id="remove">Remove</button>
+            <button id="done">Done!</button>
+        </div>
+
+        <div id="cabecalho">
+            <h2>Item</h2> 
+            <h2>Qt</h2> 
+            <h2>Obs</h2>
+        </div>
+
+        <div id="list">
+        
+        </div>
+        
     </main>
 
-    <div id="menulist">
-        <button id="Clear">Clear All</button>
-        <button id="remove">Remove</button>
-        <button id="done">Done!</button>
-    </div>
-
-    <div id="list">
-        
-    </div>
-
-
-
+    <footer>
+         
+    </footer>
 
 </body>
+
 <script src="./todomarket.js"></script>
 
 </html>
